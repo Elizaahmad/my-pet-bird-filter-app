@@ -1,0 +1,10 @@
+body{
+    background-image:url("tree-687996_1280.jpeg");
+
+}
+h3{
+    font-size: 25px !important;
+}
+.btn-success:hover{
+background-color: red;
+}
