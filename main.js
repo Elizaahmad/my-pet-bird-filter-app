@@ -1,5 +1,5 @@
 function preload(){
-ClownFilter=loadImage('https://i.postimg.cc/7ZT7HGFM/birds-png-3502.png');
+ClownFilter=loadImage('https://i.postimg.cc/3x6zqnY2/birds-png-3508.png');
 } 
 
 function setup(){
@@ -15,7 +15,7 @@ poseNet.on('pose',gotposes);
 
 function draw(){
 image(video,0,0,300,300);
-image(ClownFilter,noseX,noseY,150,150);
+image(ClownFilter,noseX,noseY,100,100);
 
 }
 
@@ -27,8 +27,8 @@ noseY=0;
 function gotposes(results){
     if(results.length>0)
     {
-        noseX=results[0].pose.nose.x- 150;
-        noseY=results[0].pose.nose.y- 45;
+        noseX=results[0].pose.nose.x- -40;
+        noseY=results[0].pose.nose.y- 10;
     }
 }
 function Take_Snapshot(){
